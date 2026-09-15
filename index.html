@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101111" />
+    <meta name="description" content="MythiX — a field guide for the rare, the unknown, and the legendary." />
+    <title>MythiX — Discover the unknown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MythiX home">
+        <span class="brand-mark"><img src="public/images/9fa4cf8a-bbd6-4f87-b905-cb8d5c47e323.jpeg" alt="MythiX logo" /></span>
+        <span>MYTHI<span class="brand-x">X</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#discover">Discover</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#rarities">Rarities</a>
+      </nav>
+      <a class="header-action" href="#search">Open field guide <span>↗</span></a>
+      <button class="menu-button" type="button" aria-label="Open menu"><span></span><span></span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="discover">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse-dot"></span> The rarest are waiting</p>
+          <h1>Find the<br /><em>unknown.</em></h1>
+          <p class="hero-text">A living index for the rare, the legendary, and everything hiding in plain sight. Decode clues. Track rarities. Go deeper.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#search">Start exploring <span>→</span></a>
+            <a class="text-link" href="#how-it-works">See how it works <span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-orbit reveal reveal-delay" aria-label="MythiX discovery field illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+          <div class="orbit-core"><span>MX</span><small>FIELD<br />01</small></div>
+          <span class="orbit-label label-top">SPECIMEN<br /><b>001 / ???</b></span>
+          <span class="orbit-label label-right">SIGNAL<br /><b>STABLE</b></span>
+          <span class="orbit-label label-bottom">UNSEEN<br /><b>IS A CLUE</b></span>
+          <span class="orbit-star star-one">✦</span><span class="orbit-star star-two">✧</span>
+        </div>
+        <div class="scroll-note"><span class="scroll-line"></span> Scroll to explore</div>
+      </section>
+
+      <section class="signal-strip" aria-label="Live index summary">
+        <div class="strip-item"><span class="strip-number" data-count="1025">0</span><span>specimens indexed</span></div>
+        <div class="strip-item"><span class="strip-number" data-count="6">0</span><span>rarity classes</span></div>
+        <div class="strip-item"><span class="strip-number" data-count="4">0</span><span>languages decoded</span></div>
+        <div class="strip-status"><span class="status-dot"></span> Index live <span class="status-time">/ updated now</span></div>
+      </section>
+
+      <section class="explorer-section" id="search">
+        <div class="section-heading reveal"><p class="eyebrow">01 / Field guide</p><h2>What are you<br /><span>looking for?</span></h2><p>Type a name or decode a clue. The index knows the rest.</p></div>
+        <div class="search-console reveal reveal-delay">
+          <div class="console-top"><span class="console-title"><i></i> Search the index</span><span class="console-key">⌘ K</span></div>
+          <form class="search-form" id="search-form">
+            <label for="search-input" class="sr-only">Search a name or clue</label>
+            <input id="search-input" type="text" autocomplete="off" placeholder="Try “M_l__es” or “Mew”" />
+            <button type="submit">Search <span>↗</span></button>
+          </form>
+          <div class="search-result" id="search-result"><span class="result-placeholder">Your next discovery will appear here.</span></div>
+        </div>
+        <div class="quick-links"><span>Popular trails</span><button type="button" data-query="M_l__es">M_l__es</button><button type="button" data-query="Mew">Mew</button><button type="button" data-query="Rayquaza">Rayquaza</button><button type="button" data-query="___">___</button></div>
+      </section>
+
+      <section class="rarity-section" id="rarities">
+        <div class="section-heading reveal"><p class="eyebrow">02 / The spectrum</p><h2>Every rarity has<br /><span>a signal.</span></h2></div>
+        <div class="rarity-grid">
+          <article class="rarity-card rarity-mythical reveal"><span class="card-index">01</span><span class="card-symbol">✦</span><h3>Mythical</h3><p>Whispered about. Rarely seen. Almost never found.</p><span class="card-arrow">↗</span></article>
+          <article class="rarity-card rarity-legendary reveal reveal-delay"><span class="card-index">02</span><span class="card-symbol">◈</span><h3>Legendary</h3><p>Ancient power, written into the fabric of the world.</p><span class="card-arrow">↗</span></article>
+          <article class="rarity-card rarity-event reveal reveal-delay-2"><span class="card-index">03</span><span class="card-symbol">✺</span><h3>Event</h3><p>One moment. One story. A form that may never return.</p><span class="card-arrow">↗</span></article>
+        </div>
+      </section>
+
+      <section class="how-section" id="how-it-works">
+        <div class="how-visual reveal"><div class="visual-grid"></div><div class="visual-stamp">M<br />X</div><span class="visual-caption">THE FIELD GUIDE<br /><b>IS ALWAYS OPEN</b></span></div>
+        <div class="how-copy reveal reveal-delay"><p class="eyebrow">03 / No guesswork</p><h2>Curiosity is<br /><span>the interface.</span></h2><div class="step"><span>01</span><div><h3>Drop a clue</h3><p>Partial names, patterns, translated names — start with whatever you have.</p></div></div><div class="step"><span>02</span><div><h3>Read the signal</h3><p>MythiX scans the index and surfaces the closest match, rarity, and trail.</p></div></div><div class="step"><span>03</span><div><h3>Go further</h3><p>Find the image, the language, or the detail that makes the discovery yours.</p></div></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark"><img src="public/images/9fa4cf8a-bbd6-4f87-b905-cb8d5c47e323.jpeg" alt="" /></span><span>MYTHI<span class="brand-x">X</span></span></a><p>Built for the curious ones.</p><span class="footer-code">MX / 2026</span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
