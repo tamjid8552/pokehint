@@ -1,11 +1,13 @@
 {
-  "name": "pokehint",
+  "name": "mythix",
   "version": "1.4.18",
-  "description": "Package used for automating actions related to Pokétwo",
+  "description": "MythiX — a field guide for the rare, the unknown, and the legendary.",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "node index.js",
-    "build": "node scripts/verify-build.js",
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish"
@@ -15,7 +17,7 @@
     "url": "git+https://github.com/kyan0045/pokehint.git"
   },
   "keywords": [
-    "poketwo",
+    "mythix",
     "pokehint",
     "poke2"
   ],
@@ -25,5 +27,8 @@
     "url": "https://github.com/kyan0045/pokehint/issues"
   },
   "homepage": "https://github.com/kyan0045/pokehint#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.4.8"
+  }
 }
